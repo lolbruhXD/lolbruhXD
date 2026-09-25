@@ -16,13 +16,9 @@
 
 I'm **Abisanka**, an engineer working across **AI agents, machine learning, and real-time vision**. I like understanding the machinery underneath a model, then building the systems that make it useful.
 
-My work spans agent memory and evaluation at **Lythe**, live-video virtual try-on at **AROH**, and biologically inspired computation at **NeuroNex Labs**. Alongside that, I'm pursuing a **B.Tech in Computer Science & Engineering at Lovely Professional University**, expected May 2029.
+My work spans agent memory and evaluation at **Lythe**, biologically inspired computation at **NeuroNex Labs**, and experiments that make machine learning easier to understand from the inside out.
 
 ## What I'm building
-
-**AROH · Founding Engineer**  
-*September 2026–present*  
-End-to-end product engineering and a monocular-depth virtual try-on pipeline: depth inference, body segmentation, garment warping, and compositing for live video. Built for **1080p at 24 FPS**.
 
 **Lythe / LytheLabs · Forward Deployed Engineer, Founding Team**  
 *January 2026–present*  

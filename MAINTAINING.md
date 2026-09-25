@@ -61,7 +61,7 @@ stops updating, check the Actions page and re-enable/run the workflow as needed.
 
 Suggested account bio (separate from this README):
 
-> AI engineer building agents, real-time vision, and learning systems. Founding engineer at AROH · Founding team at Lythe · Co-founder, NeuroNex Labs.
+> AI engineer building agents, real-time vision, and learning systems. Founding team at Lythe · Co-founder, NeuroNex Labs.
 
 Suggested pinned repositories: Creating-AutoGrad-from-scratch, OpenOrbit, holo-vex,
 and FacPosCheck. Pinning and the account bio are managed separately in GitHub's profile UI.
