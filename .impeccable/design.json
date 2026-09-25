@@ -18,10 +18,10 @@
     ]
   },
   "narrative": {
-    "overview": "An original orbital wire sculpture and warm signal line frame Abisanka's engineering work. High-contrast light and dark SVG palettes support GitHub's appearance settings. The README is a native GitHub document: artwork introduces sections, while project explanations and links remain selectable content.",
+    "overview": "An original orbital wire sculpture and warm signal line frame Abisanka's engineering work. High-contrast light and dark SVG palettes support GitHub's appearance settings. The README is a native GitHub document: linked artwork introduces projects and toolkit areas, while explanations, contribution context, and links remain selectable content.",
     "dos": [
       "Do keep light/dark asset pairs, the separate mobile compositions, and meaningful text alternatives together.",
-      "Do keep project images linked and descriptions as native Markdown; keep the activity image linked to GitHub's interactive graph.",
+      "Do keep project and toolkit images linked with selectable descriptions; keep both activity images linked to GitHub's interactive graph.",
       "Do preserve the finite hero motion and reduced-motion rule when rebuilding artwork."
     ],
     "donts": [
