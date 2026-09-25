@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 174" role="img" aria-labelledby="title desc">
+<title id="title">OpenOrbit</title><desc id="desc">Developer project sharing platform. Click through for project details.</desc>
+<rect width="320" height="174" rx="14" fill="#18284b"/>
+<path d="M0 172H320" stroke="#ffab90" stroke-width="4"/>
+<g fill="none" stroke="#f2f5ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="160" cy="86" rx="100" ry="43" transform="rotate(-18 160 86)"/>
+<ellipse cx="160" cy="86" rx="100" ry="43" transform="rotate(18 160 86)"/>
+<rect x="120" y="49" width="80" height="73" rx="7"/>
+<path d="M134 65H186M134 78H175M134 91H181M134 104H159"/>
+<circle cx="244" cy="50" r="11" fill="#ffab90" stroke="none"/>
+</g>
+<text x="20" y="29" font-size="14" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-weight="700" fill="#b2c8ef">OPENORBIT / PRODUCT</text>
+</svg>

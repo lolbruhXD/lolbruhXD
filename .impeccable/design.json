@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-25T08:26:43.704862+00:00",
+  "generatedAt": "2026-09-25T08:44:07+00:00",
   "title": "Design System: Abisanka GitHub Profile",
   "extensions": {
     "motion": [
       {
         "name": "orbital-signal",
         "value": "travel 4.5s ease-in-out 1",
-        "purpose": "One-pass highlight on the hero's coral orbit; disabled by prefers-reduced-motion: reduce."
+        "purpose": "One-pass highlight on each hero's coral orbit; disabled by prefers-reduced-motion: reduce."
       }
     ],
     "breakpoints": [
@@ -18,14 +18,14 @@
     ]
   },
   "narrative": {
-    "overview": "Original orbital wire sculpture pairs a bold cobalt field with a coral trajectory. The visual identity supports Abisanka's AI engineering work, while résumé-grounded prose and verified public project links carry the evidence.",
+    "overview": "An original orbital wire sculpture and warm signal line frame Abisanka's engineering work. High-contrast light and dark SVG palettes support GitHub's appearance settings. The README is a native GitHub document: artwork introduces sections, while project explanations and links remain selectable content.",
     "dos": [
-      "Do preserve local SVG assets, meaningful alternative text, and native Markdown project descriptions.",
-      "Do retain the mobile compositions, both calendar themes, finite motion, and reduced-motion rule when rebuilding artwork."
+      "Do keep light/dark asset pairs, the separate mobile compositions, and meaningful text alternatives together.",
+      "Do keep project images linked and descriptions as native Markdown; keep the activity image linked to GitHub's interactive graph.",
+      "Do preserve the finite hero motion and reduced-motion rule when rebuilding artwork."
     ],
     "donts": [
-      "Don't substitute external badge walls or third-party image widgets for the original identity.",
-      "Don't introduce custom website navigation, scripts, remote fonts, or README styling that depends on unsupported CSS."
+      "Don't present contribution intensity or decorative geometry as evidence of engineering quality."
     ]
   }
 }

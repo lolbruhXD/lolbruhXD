@@ -1,8 +1,12 @@
-<!-- Profile content is maintained by Abisanka. Artwork is local; activity is refreshed by GitHub Actions. -->
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
-  <img src="assets/hero.svg" width="100%" alt="Abisanka Bhattacharjee — from first principles to production systems. AI engineering, machine learning, and real-time computer vision.">
-</picture>
+<!-- Profile content is maintained by Abisanka. Illustrations follow GitHub's light/dark theme. -->
+<a href="#selected-work" aria-label="Explore Abisanka's selected projects">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+    <img src="assets/hero-light.svg" width="100%" alt="Abisanka Bhattacharjee — from first principles to production systems. Open selected projects.">
+  </picture>
+</a>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/abisanka-bhattacharjee/">LinkedIn</a> &nbsp; · &nbsp;
@@ -32,7 +36,18 @@ Previously: **Member of Technical Staff Intern at Wuri (YC W24)**, February–Ju
 
 ## Selected work
 
-<img src="assets/work.svg" width="100%" alt="Four areas of my public work: learning systems, product engineering, visual interaction, and computer vision.">
+Click an illustration to explore its repository. Each project also has a short explanation below.
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center"><a href="https://github.com/lolbruhXD/Creating-AutoGrad-from-scratch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-autograd-dark.svg"><img src="assets/project-autograd-light.svg" width="100%" alt="Autograd from scratch: open the source and computation graph example."></picture><br><strong>Autograd from scratch ↗</strong></a></td>
+    <td width="50%" align="center"><a href="https://github.com/lolbruhXD/OpenOrbit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-orbit-dark.svg"><img src="assets/project-orbit-light.svg" width="100%" alt="OpenOrbit: open the developer project-sharing platform."></picture><br><strong>OpenOrbit ↗</strong></a></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><a href="https://github.com/lolbruhXD/holo-vex"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-holo-dark.svg"><img src="assets/project-holo-light.svg" width="100%" alt="Holo-Vex: open the hand-tracked visual interaction project."></picture><br><strong>Holo-Vex ↗</strong></a></td>
+    <td width="50%" align="center"><a href="https://github.com/lolbruhXD/FacPosCheck"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-vision-dark.svg"><img src="assets/project-vision-light.svg" width="100%" alt="FacPosCheck: open the real-time vision experiment."></picture><br><strong>FacPosCheck ↗</strong></a></td>
+  </tr>
+</table>
 
 ### [Autograd from scratch](https://github.com/lolbruhXD/Creating-AutoGrad-from-scratch)
 **Understand the gradient.** A learning implementation inspired by Andrej Karpathy's micrograd: scalar operations, computation graphs, backward functions, and Graphviz visualizations. An exploration of what an autodiff engine does under the hood.
@@ -80,14 +95,16 @@ These are additional projects from my engineering work; public source links are 
 
 ## Building in the open
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/activity-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/activity-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
-  <img src="assets/activity-light.svg" width="100%" alt="My GitHub contribution calendar for the last year. The mobile view shows the latest 26 weeks. Generated from GitHub data; dates and totals are printed in the image.">
-</picture>
+<a href="https://github.com/lolbruhXD?tab=overview" aria-label="Open Abisanka's GitHub contribution calendar and inspect individual days">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/activity-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/activity-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+    <img src="assets/activity-light.svg" width="100%" alt="GitHub contributions for the last year. On mobile, the latest 18 weeks are shown. Open GitHub's interactive contribution calendar.">
+  </picture>
+</a>
 
-<sub>Activity updates weekly from GitHub. It reflects GitHub contributions, not all of my engineering work.</sub>
+<sub>Click the chart for GitHub's interactive contribution history. This image updates weekly and reflects GitHub contributions, not all of my engineering work.</sub>
 
 ## Let's build something worth understanding.
 
@@ -95,4 +112,4 @@ I'm interested in conversations about **agent reliability, efficient model archi
 
 **[Get in touch](mailto:bhattacharjeeabisanka@gmail.com)** · [Connect on LinkedIn](https://www.linkedin.com/in/abisanka-bhattacharjee/)
 
-<img src="assets/footer.svg" width="100%" alt="Understand deeply. Build deliberately.">
+<a href="mailto:bhattacharjeeabisanka@gmail.com" aria-label="Email Abisanka Bhattacharjee"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg"><img src="assets/footer-light.svg" width="100%" alt="Understand deeply. Build deliberately. Email me to collaborate."></picture></a>

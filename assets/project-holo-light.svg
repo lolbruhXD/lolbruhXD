@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 174" role="img" aria-labelledby="title desc">
+<title id="title">Holo-Vex</title><desc id="desc">Hand tracked holographic visual effects. Click through for project details.</desc>
+<rect width="320" height="174" rx="14" fill="#f9fbff"/>
+<path d="M0 172H320" stroke="#af4936" stroke-width="4"/>
+<g transform="translate(34 14) scale(.8)" fill="none" stroke="#172b78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M103 142V99L92 89Q85 80 93 73Q101 67 108 76L124 91V43Q124 31 134 31Q144 31 144 43V76V31Q144 21 154 21Q164 21 164 31V74V37Q164 27 174 27Q184 27 184 37V78V51Q184 41 194 41Q204 41 204 51V104Q201 131 182 143"/>
+<path d="M103 142H182"/><circle cx="153" cy="94" r="21"/>
+<path d="M50 87H68M241 87H259M160 9V20M160 151V163"/>
+<circle cx="153" cy="94" r="8" fill="#af4936" stroke="none"/>
+</g>
+<text x="20" y="29" font-size="14" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-weight="700" fill="#3c5093">HOLO-VEX / INTERACTION</text>
+</svg>

@@ -1,19 +1,19 @@
 ---
 name: Abisanka GitHub Profile
-description: Original cobalt and coral artwork for a GitHub-native AI engineering profile.
+description: Theme-aware original SVG artwork for a GitHub-native AI engineering profile.
 colors:
-  cobalt: "#234cdf"
-  coral: "#ffac95"
-  warm-white: "#fff8ed"
-  wire-blue: "#a4baff"
-  pale-surface: "#eef2ff"
-  work-accent: "#bd5c43"
-  work-divider: "#bdc9ed"
-  calendar-light-text: "#172340"
-  calendar-light-muted: "#485979"
-  calendar-dark-surface: "#121b2b"
-  calendar-dark-text: "#f1f4ff"
-  calendar-dark-muted: "#a9bbd5"
+  light-field: "#e8edff"
+  light-ink: "#172b78"
+  light-muted: "#3c5093"
+  light-mesh: "#4b68b7"
+  light-signal: "#af4936"
+  light-panel: "#f9fbff"
+  dark-field: "#101b36"
+  dark-ink: "#f2f5ff"
+  dark-muted: "#b2c8ef"
+  dark-mesh: "#80a9ef"
+  dark-signal: "#ffab90"
+  dark-panel: "#18284b"
 typography:
   display:
     fontFamily: "Trebuchet MS, Segoe UI, Arial, sans-serif"
@@ -26,28 +26,36 @@ typography:
     fontWeight: 700
   calendar-title:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif"
-    fontSize: "25px"
+    fontSize: "28px"
     fontWeight: 700
 rounded:
-  hero: "14px"
-  artwork: "10px"
+  artwork: "14px"
   calendar: "12px"
-  day: "2px"
+  calendar-day: "3px"
 components:
-  hero:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.warm-white}"
-    rounded: "{rounded.hero}"
-  work-strip:
-    backgroundColor: "{colors.pale-surface}"
+  hero-light:
+    backgroundColor: "{colors.light-field}"
+    textColor: "{colors.light-ink}"
     rounded: "{rounded.artwork}"
-  calendar-light:
-    backgroundColor: "{colors.pale-surface}"
-    textColor: "{colors.calendar-light-text}"
+  hero-dark:
+    backgroundColor: "{colors.dark-field}"
+    textColor: "{colors.dark-ink}"
+    rounded: "{rounded.artwork}"
+  project-light:
+    backgroundColor: "{colors.light-panel}"
+    textColor: "{colors.light-ink}"
+    rounded: "{rounded.artwork}"
+  project-dark:
+    backgroundColor: "{colors.dark-panel}"
+    textColor: "{colors.dark-ink}"
+    rounded: "{rounded.artwork}"
+  activity-light:
+    backgroundColor: "{colors.light-field}"
+    textColor: "{colors.light-ink}"
     rounded: "{rounded.calendar}"
-  calendar-dark:
-    backgroundColor: "{colors.calendar-dark-surface}"
-    textColor: "{colors.calendar-dark-text}"
+  activity-dark:
+    backgroundColor: "{colors.dark-field}"
+    textColor: "{colors.dark-ink}"
     rounded: "{rounded.calendar}"
 ---
 
@@ -55,53 +63,43 @@ components:
 
 ## Overview
 
-Original orbital wire sculpture pairs a bold cobalt field with a coral trajectory. The visual identity supports Abisanka's AI engineering work, while résumé-grounded prose and verified public project links carry the evidence.
-
-This is a GitHub profile README, not a custom website. Local, self-contained SVG artwork frames native Markdown content. The identity is direct, technical, and personal; no external badges, image services, or downloaded fonts are needed.
+An original orbital wire sculpture and warm signal line frame Abisanka's engineering work. High-contrast light and dark SVG palettes support GitHub's appearance settings. The README is a native GitHub document: artwork introduces sections, while project explanations and links remain selectable content.
 
 ## Colors
 
-Cobalt anchors the hero and footer. Coral traces the orbital path and bottom rule; warm white carries their prominent text. Wire blue makes the fine sculpture lines visible without competing with the name.
-
-The work strip uses a pale surface, cobalt diagrams, muted dividers, and a deeper coral accent. The calendar has separate light and dark surfaces and text colors. Its ordered five-step intensity ramps run from a quiet neutral through violet to warm coral; the legend communicates relative activity, not engineering quality.
+The light palette uses a pale blue field with deep blue ink; the dark palette uses a navy field with near-white ink. Each has its own muted text, mesh, panel, and coral signal colors. The activity chart uses separate five-step light and dark intensity ramps; the legend indicates contribution frequency.
 
 ## Typography
 
-The artwork uses the local Trebuchet MS / Segoe UI / Arial stack. The frontmatter records desktop SVG coordinate sizes, which scale with each image. The desktop name uses two lines at 79 and 65 units; the statement uses 34. The mobile drawing uses name lines at 60 and 49, a statement at 30, and stacked discipline labels at 20.
-
-Calendar text uses the system sans-serif stack. GitHub controls Markdown body type, headings, inline code, tables, links, and disclosure controls; do not attempt to override them with page CSS.
+Artwork uses Trebuchet MS with Segoe UI and Arial fallbacks. The desktop hero name uses 79- and 65-unit lines, with a 34-unit statement. Mobile uses 60- and 49-unit name lines, a 30-unit statement, and 20-unit stacked discipline labels. The calendar uses the system sans-serif stack. GitHub controls the Markdown body type and native link presentation.
 
 ## Layout
 
-The README is a single native document column: hero, contact links, introduction, current work, selected projects, tools, activity, and contact. Longer experiments use a native `details` disclosure. Project descriptions and links remain selectable Markdown instead of being baked into images.
+The README runs from linked hero through contact links, introduction, current work, selected projects, toolkit, activity, and contact. Four linked project illustrations form a two-column table, followed by selectable descriptions and links. Additional experiments sit in a native details disclosure.
 
-All artwork uses a responsive full-width image. The hero has separate desktop (960 × 408) and mobile (560 × 490) compositions. A `picture` source switches at a maximum viewport width of 600px. Mobile rearranges the name, statement, disciplines, and sculpture rather than shrinking the desktop composition.
+README picture elements choose light/dark artwork through prefers-color-scheme. At 600px and below, hero and activity switch to separate mobile compositions. The hero is 960 × 408 desktop and 560 × 490 mobile. Project icons are 320 × 174; the footer is 960 × 100.
 
-The calendar uses the same breakpoint: desktop (960 × 306) shows the returned year; mobile (560 × 332) shows the latest 26 weeks. Desktop day cells are 12 units with a 16-unit step; mobile cells are 14 with a 19-unit step. Its annual total remains explicitly labeled even in the shorter mobile view. The work strip and footer scale from 960-unit-wide drawings.
+The desktop activity drawing is 960 × 320 and shows the returned annual calendar with 15-unit day cells at 17-unit steps. Mobile is 390 × 355 and shows the latest 18 weeks with 16-unit cells at 19-unit steps. Both label the annual total, visible date range, legend, source, and update date.
 
 ## Elevation & Depth
 
-There are no shadows. Flat color fields, fine wire intersections, and the coral orbital trajectory create the visual depth. The sculpture is decorative geometry, not a scientific result or performance chart.
+There are no shadows. Flat fields, fine mesh intersections, and the coral trajectory create visual depth. The sculpture is decorative, not a model diagram or performance measure.
 
 ## Shapes
 
-Large image panels have gently rounded corners. The repeated language is linework: connected nodes, stacked documents, intersecting orbits, a pose figure, and a simple footer arrow. Calendar days are small rounded squares. Keep illustration detail subordinate to readable text.
+Artwork panels use rounded corners. Fine connected lines form the orbital mesh and project-specific diagrams; calendar days are small rounded squares. The footer repeats the signal color in a simple arrow.
 
 ## Components
 
-**Hero:** `assets/hero.svg` and `assets/hero-mobile.svg` contain the same identity and statement with independent compositions. A small light signal travels along the coral path once over 4.5 seconds with `ease-in-out`; `prefers-reduced-motion: reduce` disables the animation. The resting image remains complete and understandable.
+**Hero:** The four hero-light/dark and hero-mobile-light/dark SVGs have paired theme palettes and separate desktop/mobile compositions. The full hero image links to selected work. A highlight travels along the orbit once over 4.5 seconds; reduced-motion preference disables it.
 
-**Work strip and footer:** `assets/work.svg` introduces four disciplines with original diagrams. `assets/footer.svg` repeats the cobalt/coral identity and the closing statement. Both are static.
+**Projects and footer:** The Autograd, OpenOrbit, Holo-Vex, and FacPosCheck icons each have light/dark SVGs (project-autograd, project-orbit, project-holo, and project-vision) and link to their repositories. Footer-light.svg and footer-dark.svg carry the closing line and link to email.
 
-**Activity calendar:** four local `activity-*.svg` variants combine desktop/mobile with light/dark presentation. README `picture` sources select the appropriate size and `prefers-color-scheme` variant. Each drawing includes dates, an annual contribution total, a Less–More legend, the GitHub source, and an update date. A weekly workflow refreshes the data. Images have SVG titles/descriptions and README alternative text.
-
-**Native content:** ordinary Markdown headings, project links, inline technology labels, a toolkit table, and the disclosure provide the reading structure. Interactive appearance, focus, hover, and keyboard behavior belong to GitHub.
+**Activity:** Four local activity SVGs pair desktop/mobile with light/dark themes. The image links to GitHub's native interactive contribution calendar, where visitors can inspect individual days. A weekly workflow refreshes the static images from GitHub data. The images include SVG titles/descriptions and README alternative text.
 
 ## Do's and Don'ts
 
-- **Do** preserve local SVG assets, meaningful alternative text, and native Markdown project descriptions.
-- **Do** retain the mobile compositions, both calendar themes, finite motion, and reduced-motion rule when rebuilding artwork.
-- **Do** keep the profile grounded in the résumé and verified public links; label additional work without inventing repository URLs.
-- **Don't** substitute external badge walls or third-party image widgets for the original identity.
-- **Don't** introduce custom website navigation, scripts, remote fonts, or README styling that depends on unsupported CSS.
-- **Don't** describe contribution intensity or the orbital illustration as evidence of performance or model quality.
+- **Do** keep light/dark asset pairs, the separate mobile compositions, and meaningful text alternatives together.
+- **Do** keep project images linked and descriptions as native Markdown; keep the activity image linked to GitHub's interactive graph.
+- **Do** preserve the finite hero motion and reduced-motion rule when rebuilding artwork.
+- **Don't** present contribution intensity or decorative geometry as evidence of engineering quality.

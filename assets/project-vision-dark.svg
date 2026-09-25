@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 174" role="img" aria-labelledby="title desc">
+<title id="title">FacPosCheck</title><desc id="desc">Experimental real-time vision pipeline. Click through for project details.</desc>
+<rect width="320" height="174" rx="14" fill="#18284b"/>
+<path d="M0 172H320" stroke="#ffab90" stroke-width="4"/>
+<g fill="none" stroke="#f2f5ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M86 37H73V51M234 37H247V51M73 123V137H86M247 123V137H234"/>
+<ellipse cx="160" cy="75" rx="32" ry="38"/>
+<path d="M105 149Q118 111 140 112M215 149Q202 111 180 112M116 160H204"/>
+<circle cx="145" cy="71" r="3" fill="#ffab90" stroke="none"/>
+<circle cx="175" cy="71" r="3" fill="#ffab90" stroke="none"/>
+<path d="M145 94Q160 104 175 94" stroke="#ffab90"/>
+</g>
+<text x="20" y="29" font-size="14" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-weight="700" fill="#b2c8ef">FACPOSCHECK / VISION</text>
+</svg>

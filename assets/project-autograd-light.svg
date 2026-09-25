@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 174" role="img" aria-labelledby="title desc">
+<title id="title">Autograd from scratch</title><desc id="desc">Automatic differentiation learning implementation. Click through for project details.</desc>
+<rect width="320" height="174" rx="14" fill="#f9fbff"/>
+<path d="M0 172H320" stroke="#af4936" stroke-width="4"/>
+<g fill="none" stroke="#172b78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M48 48L112 87M48 125L112 87M112 87L184 47M112 87L184 126M184 47L258 87M184 126L258 87"/>
+<circle cx="48" cy="48" r="12"/><circle cx="48" cy="125" r="12"/><circle cx="112" cy="87" r="14"/>
+<circle cx="184" cy="47" r="12"/><circle cx="184" cy="126" r="12"/><circle cx="258" cy="87" r="17"/>
+<path d="M258 70V104M241 87H275" stroke="#af4936"/>
+</g>
+<text x="20" y="29" font-size="14" font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" font-weight="700" fill="#3c5093">AUTOGRAD / LEARNING SYSTEMS</text>
+</svg>
