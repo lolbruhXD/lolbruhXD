@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T08:26:43.704862+00:00",
+  "title": "Design System: Abisanka GitHub Profile",
+  "extensions": {
+    "motion": [
+      {
+        "name": "orbital-signal",
+        "value": "travel 4.5s ease-in-out 1",
+        "purpose": "One-pass highlight on the hero's coral orbit; disabled by prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-picture-max-width",
+        "value": "600px"
+      }
+    ]
+  },
+  "narrative": {
+    "overview": "Original orbital wire sculpture pairs a bold cobalt field with a coral trajectory. The visual identity supports Abisanka's AI engineering work, while résumé-grounded prose and verified public project links carry the evidence.",
+    "dos": [
+      "Do preserve local SVG assets, meaningful alternative text, and native Markdown project descriptions.",
+      "Do retain the mobile compositions, both calendar themes, finite motion, and reduced-motion rule when rebuilding artwork."
+    ],
+    "donts": [
+      "Don't substitute external badge walls or third-party image widgets for the original identity.",
+      "Don't introduce custom website navigation, scripts, remote fonts, or README styling that depends on unsupported CSS."
+    ]
+  }
+}

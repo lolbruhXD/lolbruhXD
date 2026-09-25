@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 116" role="img" aria-labelledby="title">
+<title id="title">Learning systems, product engineering, visual interaction, computer vision</title>
+<rect width="960" height="116" rx="10" fill="#eef2ff"/>
+<g stroke="#bdc9ed" fill="none"><path d="M240 22V94M480 22V94M720 22V94"/></g>
+<g stroke="#234cdf" stroke-width="2" fill="#eef2ff">
+<path d="M55,34L115,58"/>
+<path d="M55,82L115,58"/>
+<path d="M115,58L180,34"/>
+<path d="M115,58L180,82"/>
+<circle cx="55" cy="34" r="8"/>
+<circle cx="55" cy="82" r="8"/>
+<circle cx="115" cy="58" r="8"/>
+<circle cx="180" cy="34" r="8"/>
+<circle cx="180" cy="82" r="8"/>
+<rect x="312" y="26" width="70" height="66" rx="4"/><rect x="331" y="18" width="70" height="66" rx="4"/><path d="M341 32H391M341 43H380M341 54H374M341 65H384"/>
+<ellipse cx="600" cy="58" rx="52" ry="20" transform="rotate(-30 600 58)"/><ellipse cx="600" cy="58" rx="52" ry="20" transform="rotate(30 600 58)"/><ellipse cx="600" cy="58" rx="52" ry="20" transform="rotate(90 600 58)"/>
+<circle cx="840" cy="30" r="10"/><path d="M840 40V65M812 51H867M840 65L819 90M840 65L863 90M791 21V13H805M874 13H888V26M791 88V102H805M874 102H888V88"/>
+</g><g fill="#bd5c43"><circle cx="115" cy="58" r="5"/><rect x="361" y="59" width="39" height="17" rx="3"/><circle cx="600" cy="58" r="9"/><circle cx="840" cy="65" r="5"/></g></svg>
