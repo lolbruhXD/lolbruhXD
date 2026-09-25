@@ -1,6 +1,7 @@
 """Build original light/dark SVG artwork for a GitHub-native profile."""
 from pathlib import Path
 import math
+import html
 
 ROOT = Path(__file__).resolve().parents[1]
 PALETTES = {
@@ -13,11 +14,17 @@ PROJECTS = [
     ('holo', 'Holo-Vex', 'HOLO-VEX / INTERACTION', 'Hand tracked holographic visual effects'),
     ('vision', 'FacPosCheck', 'FACPOSCHECK / VISION', 'Experimental real-time vision pipeline'),
 ]
+STACK = [
+    ('models', 'Model craft', 'PYTHON · PYTORCH · NUMPY · CUDA', 'Computation graph and tensor operations'),
+    ('agents', 'Agents & memory', 'GO · LANGGRAPH · HNSW', 'Connected agent nodes and retrieval memory'),
+    ('vision', 'Real-time vision', 'OPENCV · MEDIAPIPE · ESP32', 'Camera frame and hand landmarks'),
+    ('systems', 'Systems that ship', 'TYPESCRIPT · FASTAPI · DOCKER · AWS', 'Connected API and deployment layers'),
+]
 
 
 def start(w, h, title, desc, fill):
     return [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">',
-            f'<title id="title">{title}</title><desc id="desc">{desc}</desc>',
+            f'<title id="title">{html.escape(title)}</title><desc id="desc">{html.escape(desc)}</desc>',
             f'<rect width="{w}" height="{h}" rx="14" fill="{fill}"/>']
 
 
@@ -115,6 +122,35 @@ def project_icon(key, title, label, desc, theme):
     return '\n'.join(s)
 
 
+def stack_card(key, title, tools, desc, theme):
+    p = PALETTES[theme]
+    s = start(400, 120, title, desc, p['panel'])
+    s += [f'<path d="M0 117H400" stroke="{p["signal"]}" stroke-width="3"/>',
+          f'<g fill="none" stroke="{p["mesh"]}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">']
+    if key == 'models':
+        s += ['<circle cx="51" cy="44" r="13"/><circle cx="51" cy="80" r="13"/><circle cx="106" cy="62" r="15"/>',
+              '<path d="M64 44L91 57M64 80L91 67M121 62H140"/>',
+              f'<path d="M138 50L150 62L138 74" stroke="{p["signal"]}"/>']
+    elif key == 'agents':
+        s += ['<circle cx="51" cy="62" r="15"/><circle cx="119" cy="39" r="13"/><circle cx="119" cy="85" r="13"/>',
+              '<path d="M66 57L106 43M66 67L106 81M119 52V72"/>',
+              f'<circle cx="51" cy="62" r="5" fill="{p["signal"]}" stroke="none"/>']
+    elif key == 'vision':
+        s += ['<path d="M31 40V29H45M137 29H151V40M31 84V96H45M137 96H151V84"/>',
+              '<path d="M61 79L72 66L84 72L97 45L108 64L126 52"/>',
+              f'<circle cx="97" cy="45" r="5" fill="{p["signal"]}" stroke="none"/>']
+    else:
+        s += ['<rect x="31" y="32" width="38" height="60" rx="5"/><rect x="112" y="32" width="38" height="60" rx="5"/>',
+              '<path d="M45 50L52 58L45 66M82 62H100M95 56L101 62L95 68M125 49H138M125 60H138M125 71H134"/>',
+              f'<circle cx="88" cy="62" r="4" fill="{p["signal"]}" stroke="none"/>']
+    s += ['</g>',
+          f'<g font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" fill="{p["ink"]}">',
+          f'<text x="176" y="54" font-size="22" font-weight="700">{html.escape(title)}</text>',
+          f'<text x="176" y="79" font-size="10" font-weight="700" letter-spacing=".55" fill="{p["muted"]}">{html.escape(tools)}</text>',
+          '</g></svg>']
+    return '\n'.join(s)
+
+
 def footer(theme):
     p = PALETTES[theme]
     s = start(960, 100, 'Understand deeply. Build deliberately.', 'Contact Abisanka Bhattacharjee to collaborate.', p['field'])
@@ -132,9 +168,11 @@ def main():
         (assets / f'footer-{theme}.svg').write_text(footer(theme))
         for key, title, label, desc in PROJECTS:
             (assets / f'project-{key}-{theme}.svg').write_text(project_icon(key, title, label, desc, theme))
+        for key, title, tools, desc in STACK:
+            (assets / f'stack-{key}-{theme}.svg').write_text(stack_card(key, title, tools, desc, theme))
     for old in ['hero.svg', 'hero-mobile.svg', 'work.svg', 'footer.svg']:
         (assets / old).unlink(missing_ok=True)
-    print('Built 14 theme-aware original SVG illustrations.')
+    print('Built 22 theme-aware original SVG illustrations.')
 
 
 if __name__ == '__main__':

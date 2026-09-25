@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" role="img" aria-labelledby="title desc">
+<title id="title">Real-time vision</title><desc id="desc">Camera frame and hand landmarks</desc>
+<rect width="400" height="120" rx="14" fill="#18284b"/>
+<path d="M0 117H400" stroke="#ffab90" stroke-width="3"/>
+<g fill="none" stroke="#80a9ef" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M31 40V29H45M137 29H151V40M31 84V96H45M137 96H151V84"/>
+<path d="M61 79L72 66L84 72L97 45L108 64L126 52"/>
+<circle cx="97" cy="45" r="5" fill="#ffab90" stroke="none"/>
+</g>
+<g font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" fill="#f2f5ff">
+<text x="176" y="54" font-size="22" font-weight="700">Real-time vision</text>
+<text x="176" y="79" font-size="10" font-weight="700" letter-spacing=".55" fill="#b2c8ef">OPENCV · MEDIAPIPE · ESP32</text>
+</g></svg>

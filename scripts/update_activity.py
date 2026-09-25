@@ -84,6 +84,78 @@ def render(calendar_data, dark=False, mobile=False):
     return '\n'.join(out)
 
 
+def monthly_summary(calendar_data):
+    days = [day for week in calendar_data['weeks'] for day in week['contributionDays']]
+    if not days:
+        raise ValueError('GitHub returned an empty calendar; keeping existing artwork.')
+    active = sum(day['contributionCount'] > 0 for day in days)
+    longest = run = 0
+    for day in days:
+        run = run + 1 if day['contributionCount'] > 0 else 0
+        longest = max(longest, run)
+    end = dt.date.fromisoformat(days[-1]['date'])
+    first_month = end.year * 12 + end.month - 13
+    months = []
+    for offset in range(1, 13):
+        index = first_month + offset
+        months.append((index // 12, index % 12 + 1))
+    counts = {(year, month): 0 for year, month in months}
+    for day in days:
+        date = dt.date.fromisoformat(day['date'])
+        key = (date.year, date.month)
+        if key in counts:
+            counts[key] += day['contributionCount']
+    peak = max(months, key=lambda month: counts[month])
+    return active, longest, months, counts, peak, end
+
+
+def render_momentum(calendar_data, dark=False, mobile=False):
+    active, longest, months, counts, peak, end = monthly_summary(calendar_data)
+    w, h = (390, 355) if mobile else (960, 290)
+    bg, panel, fg, muted, mesh, signal = (
+        ('#101b36', '#18284b', '#f2f5ff', '#b2c8ef', '#80a9ef', '#ffab90') if dark else
+        ('#e8edff', '#f9fbff', '#172b78', '#3c5093', '#4b68b7', '#af4936'))
+    left, right = (24, 366) if mobile else (30, 930)
+    title = 'GitHub contribution rhythm'
+    period = f'{calendar.month_abbr[months[0][1]]} {months[0][0]} – {calendar.month_abbr[end.month]} {end.year}'
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">',
+           f'<title id="title">{title}</title>',
+           f'<desc id="desc">{active} active days, longest run {longest} days. Twelve monthly bars from {period}; current month is in progress. Open GitHub for individual contributions.</desc>',
+           f'<rect width="{w}" height="{h}" rx="12" fill="{bg}"/>',
+           f'<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" fill="{fg}">',
+           f'<text x="{left}" y="{42 if mobile else 45}" font-size="{23 if mobile else 26}" font-weight="700">Contribution rhythm.</text>',
+           f'<text x="{left}" y="{69 if mobile else 71}" font-size="{12 if mobile else 15}" fill="{muted}">Monthly GitHub activity · {period}</text>']
+    gap = 7 if mobile else 13
+    card_w = (right - left - 2 * gap) / 3
+    metrics = [(str(active), 'ACTIVE DAYS', '◉'), (str(longest), 'LONGEST RUN', '↗'),
+               (str(counts[peak]), f'PEAK · {calendar.month_abbr[peak[1]].upper()}', '▥')]
+    top = 89
+    for i, (value, label, icon) in enumerate(metrics):
+        x = left + i * (card_w + gap)
+        out += [f'<rect x="{x:.1f}" y="{top}" width="{card_w:.1f}" height="{75 if mobile else 69}" rx="9" fill="{panel}"/>',
+                f'<text x="{x+12:.1f}" y="{top+36}" font-size="{28 if mobile else 30}" font-weight="700">{value}</text>',
+                f'<text x="{x+card_w-13:.1f}" y="{top+33}" text-anchor="end" font-size="{20 if mobile else 21}" fill="{signal}">{icon}</text>',
+                f'<text x="{x+12:.1f}" y="{top+59}" font-size="{9 if mobile else 11}" font-weight="700" letter-spacing=".7" fill="{muted}">{label}</text>']
+    baseline = 296 if mobile else 237
+    chart_top = 202 if mobile else 181
+    chart_height = baseline - chart_top
+    max_count = max(counts.values()) or 1
+    step = (right - left) / 12
+    bar_width = min(20 if mobile else 43, step * .68)
+    out.append(f'<path d="M{left} {baseline+.5}H{right}" stroke="{muted}" stroke-width="1" opacity=".65"/>')
+    for i, month in enumerate(months):
+        x = left + i * step + (step - bar_width) / 2
+        count = counts[month]
+        height = max(3, count / max_count * chart_height) if count else 3
+        color = signal if month == peak else mesh
+        label = calendar.month_abbr[month[1]] if not mobile else calendar.month_abbr[month[1]][0]
+        out += [f'<rect x="{x:.1f}" y="{baseline-height:.1f}" width="{bar_width:.1f}" height="{height:.1f}" rx="3" fill="{color}"><title>{calendar.month_name[month[1]]} {month[0]}: {count} contributions</title></rect>',
+                f'<text x="{left+(i+.5)*step:.1f}" y="{baseline+19}" text-anchor="middle" font-size="{10 if mobile else 12}" fill="{muted}">{label}</text>']
+    stamp = dt.datetime.now(dt.timezone.utc).strftime('%d %b %Y')
+    out.append(f'<text x="{left}" y="{h-12}" font-size="{10 if mobile else 11}" fill="{muted}">Source: GitHub · Updated {stamp} UTC · Current month in progress</text></g></svg>')
+    return '\n'.join(out)
+
+
 def main():
     if len(sys.argv) > 1:
         result = json.loads(Path(sys.argv[1]).read_text())
@@ -99,11 +171,13 @@ def main():
         for mobile in (False, True):
             name = 'activity-' + ('mobile-' if mobile else '') + ('dark' if dark else 'light') + '.svg'
             outputs[ROOT / 'assets' / name] = render(data, dark, mobile)
+            name = 'momentum-' + ('mobile-' if mobile else '') + ('dark' if dark else 'light') + '.svg'
+            outputs[ROOT / 'assets' / name] = render_momentum(data, dark, mobile)
     for path, content in outputs.items():
         temp = path.with_suffix('.tmp')
         temp.write_text(content)
         temp.replace(path)
-    print('Rendered four activity variants from GitHub data.')
+    print('Rendered eight activity and contribution-rhythm variants from GitHub data.')
 
 
 if __name__ == '__main__':

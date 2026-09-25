@@ -75,11 +75,11 @@ Artwork uses Trebuchet MS with Segoe UI and Arial fallbacks. The desktop hero na
 
 ## Layout
 
-The README runs from linked hero through contact links, introduction, current work, selected projects, toolkit, activity, and contact. Four linked project illustrations form a two-column table, followed by selectable descriptions and links. Additional experiments sit in a native details disclosure.
+The README runs from linked hero through contact links, introduction, current work, selected projects, visual toolkit, activity, and contact. Four linked project illustrations form a two-column table, followed by selectable descriptions and links. Four linked toolkit cards form a second two-column table. Additional experiments sit in a native details disclosure.
 
 README picture elements choose light/dark artwork through prefers-color-scheme. At 600px and below, hero and activity switch to separate mobile compositions. The hero is 960 × 408 desktop and 560 × 490 mobile. Project icons are 320 × 174; the footer is 960 × 100.
 
-The desktop activity drawing is 960 × 320 and shows the returned annual calendar with 15-unit day cells at 17-unit steps. Mobile is 390 × 355 and shows the latest 18 weeks with 16-unit cells at 19-unit steps. Both label the annual total, visible date range, legend, source, and update date.
+The desktop activity drawing is 960 × 320 and shows the returned annual calendar with 15-unit day cells at 17-unit steps. Mobile is 390 × 355 and shows the latest 18 weeks with 16-unit cells at 19-unit steps. Both label the annual total, visible date range, legend, source, and update date. A second 960 × 290 desktop / 390 × 355 mobile drawing shows active days, longest run, peak month, and monthly contribution bars.
 
 ## Elevation & Depth
 
@@ -93,9 +93,9 @@ Artwork panels use rounded corners. Fine connected lines form the orbital mesh a
 
 **Hero:** The four hero-light/dark and hero-mobile-light/dark SVGs have paired theme palettes and separate desktop/mobile compositions. The full hero image links to selected work. A highlight travels along the orbit once over 4.5 seconds; reduced-motion preference disables it.
 
-**Projects and footer:** The Autograd, OpenOrbit, Holo-Vex, and FacPosCheck icons each have light/dark SVGs (project-autograd, project-orbit, project-holo, and project-vision) and link to their repositories. Footer-light.svg and footer-dark.svg carry the closing line and link to email.
+**Projects, toolkit, and footer:** The Autograd, OpenOrbit, Holo-Vex, and FacPosCheck icons each have light/dark SVGs (project-autograd, project-orbit, project-holo, and project-vision) and link to their repositories. Four linked toolkit cards depict model computation, agent connections, visual sensing, and application delivery. Footer-light.svg and footer-dark.svg carry the closing line and link to email.
 
-**Activity:** Four local activity SVGs pair desktop/mobile with light/dark themes. The image links to GitHub's native interactive contribution calendar, where visitors can inspect individual days. A weekly workflow refreshes the static images from GitHub data. The images include SVG titles/descriptions and README alternative text.
+**Activity:** Four local activity SVGs pair desktop/mobile with light/dark themes. Four momentum SVGs provide the monthly view and compact summary. Both images link to GitHub's native interactive contribution calendar, where visitors can inspect individual days. A weekly workflow refreshes the static images from GitHub data. The images include SVG titles/descriptions and README alternative text.
 
 ## Do's and Don'ts
 

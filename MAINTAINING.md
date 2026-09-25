@@ -21,8 +21,8 @@ All images are repository-local SVGs. No analytics pixels, visitor counters, ext
 font requests, or third-party badge servers are used. The orbital wire sculpture is
 original decorative artwork, not a model architecture or performance chart.
 
-To regenerate the four hero variants, four linked project icons in both themes,
-and the paired footer:
+To regenerate the four hero variants, four linked project icons and four linked
+toolkit cards in both themes, and the paired footer:
 
 ```sh
 python3 scripts/build_artwork.py
@@ -32,7 +32,8 @@ Each hero has a single 4.5-second motion sequence and respects reduced-motion pr
 README picture sources select artwork for GitHub's light/dark appearance; hero and activity
 use separate mobile compositions at 600px and below. The high-contrast palettes are defined
 in scripts/build_artwork.py. All images have text alternatives. The hero links to selected
-work, each project icon opens its repository, and the footer links to email.
+work, each project icon opens its repository, the toolkit cards open related
+projects or current work, and the footer links to email.
 
 ## Activity updates
 
@@ -51,7 +52,10 @@ with 15-unit day cells on 17-unit steps and shows the returned year. The mobile 
 390 × 355 with 16-unit cells on 19-unit steps and shows the latest 18 weeks while
 labeling the annual total explicitly. The static chart links to GitHub's native
 interactive calendar so visitors can inspect individual days. These are contribution
-counts, not commit counts or a measure of all work. Data errors leave the existing
+counts, not commit counts or a measure of all work. A second paired chart shows
+active days and longest run over the returned year, plus the latest 12 calendar
+months as bars; its current month is incomplete. Both charts link to the native
+interactive calendar. Data errors leave the existing
 artwork intact; the date printed on it shows the last successful refresh.
 
 GitHub can disable scheduled workflows in inactive public repositories. If the date
@@ -70,6 +74,9 @@ and FacPosCheck. Pinning and the account bio are managed separately in GitHub's 
 
 - [GitHub profile README topic](https://github.com/topics/profile-readme)
 - [Awesome GitHub Profile READMEs](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
+- [Orhun's profile](https://github.com/orhun/orhun) — direct identity, purposeful visual motif, and project links.
+- [Anurag Hazra's profile](https://github.com/anuraghazra/anuraghazra) — a readable visual tool stack next to project links.
+- [Simon Willison's profile](https://github.com/simonw/simonw) — profile data refreshed by automation, with a clear link to the underlying work.
 - [GitHub: managing your profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme)
 
 The layout and illustrations here are original; no showcase profile was copied.

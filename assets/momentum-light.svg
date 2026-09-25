@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" role="img" aria-labelledby="title desc">
+<title id="title">GitHub contribution rhythm</title>
+<desc id="desc">23 active days, longest run 3 days. Twelve monthly bars from Oct 2025 – Sep 2026; current month is in progress. Open GitHub for individual contributions.</desc>
+<rect width="960" height="290" rx="12" fill="#e8edff"/>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" fill="#172b78">
+<text x="30" y="45" font-size="26" font-weight="700">Contribution rhythm.</text>
+<text x="30" y="71" font-size="15" fill="#3c5093">Monthly GitHub activity · Oct 2025 – Sep 2026</text>
+<rect x="30.0" y="89" width="291.3" height="69" rx="9" fill="#f9fbff"/>
+<text x="42.0" y="125" font-size="30" font-weight="700">23</text>
+<text x="308.3" y="122" text-anchor="end" font-size="21" fill="#af4936">◉</text>
+<text x="42.0" y="148" font-size="11" font-weight="700" letter-spacing=".7" fill="#3c5093">ACTIVE DAYS</text>
+<rect x="334.3" y="89" width="291.3" height="69" rx="9" fill="#f9fbff"/>
+<text x="346.3" y="125" font-size="30" font-weight="700">3</text>
+<text x="612.7" y="122" text-anchor="end" font-size="21" fill="#af4936">↗</text>
+<text x="346.3" y="148" font-size="11" font-weight="700" letter-spacing=".7" fill="#3c5093">LONGEST RUN</text>
+<rect x="638.7" y="89" width="291.3" height="69" rx="9" fill="#f9fbff"/>
+<text x="650.7" y="125" font-size="30" font-weight="700">23</text>
+<text x="917.0" y="122" text-anchor="end" font-size="21" fill="#af4936">▥</text>
+<text x="650.7" y="148" font-size="11" font-weight="700" letter-spacing=".7" fill="#3c5093">PEAK · MAR</text>
+<path d="M30 237.5H930" stroke="#3c5093" stroke-width="1" opacity=".65"/>
+<rect x="46.0" y="232.1" width="43.0" height="4.9" rx="3" fill="#4b68b7"><title>October 2025: 2 contributions</title></rect>
+<text x="67.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Oct</text>
+<rect x="121.0" y="217.5" width="43.0" height="19.5" rx="3" fill="#4b68b7"><title>November 2025: 8 contributions</title></rect>
+<text x="142.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Nov</text>
+<rect x="196.0" y="227.3" width="43.0" height="9.7" rx="3" fill="#4b68b7"><title>December 2025: 4 contributions</title></rect>
+<text x="217.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Dec</text>
+<rect x="271.0" y="234.0" width="43.0" height="3.0" rx="3" fill="#4b68b7"><title>January 2026: 0 contributions</title></rect>
+<text x="292.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Jan</text>
+<rect x="346.0" y="234.0" width="43.0" height="3.0" rx="3" fill="#4b68b7"><title>February 2026: 0 contributions</title></rect>
+<text x="367.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Feb</text>
+<rect x="421.0" y="181.0" width="43.0" height="56.0" rx="3" fill="#af4936"><title>March 2026: 23 contributions</title></rect>
+<text x="442.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Mar</text>
+<rect x="496.0" y="222.4" width="43.0" height="14.6" rx="3" fill="#4b68b7"><title>April 2026: 6 contributions</title></rect>
+<text x="517.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Apr</text>
+<rect x="571.0" y="234.0" width="43.0" height="3.0" rx="3" fill="#4b68b7"><title>May 2026: 0 contributions</title></rect>
+<text x="592.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">May</text>
+<rect x="646.0" y="234.0" width="43.0" height="3.0" rx="3" fill="#4b68b7"><title>June 2026: 0 contributions</title></rect>
+<text x="667.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Jun</text>
+<rect x="721.0" y="220.0" width="43.0" height="17.0" rx="3" fill="#4b68b7"><title>July 2026: 7 contributions</title></rect>
+<text x="742.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Jul</text>
+<rect x="796.0" y="227.3" width="43.0" height="9.7" rx="3" fill="#4b68b7"><title>August 2026: 4 contributions</title></rect>
+<text x="817.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Aug</text>
+<rect x="871.0" y="222.4" width="43.0" height="14.6" rx="3" fill="#4b68b7"><title>September 2026: 6 contributions</title></rect>
+<text x="892.5" y="256" text-anchor="middle" font-size="12" fill="#3c5093">Sep</text>
+<text x="30" y="278" font-size="11" fill="#3c5093">Source: GitHub · Updated 25 Sep 2026 UTC · Current month in progress</text></g></svg>

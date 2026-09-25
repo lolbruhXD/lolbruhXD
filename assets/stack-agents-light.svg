@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" role="img" aria-labelledby="title desc">
+<title id="title">Agents &amp; memory</title><desc id="desc">Connected agent nodes and retrieval memory</desc>
+<rect width="400" height="120" rx="14" fill="#f9fbff"/>
+<path d="M0 117H400" stroke="#af4936" stroke-width="3"/>
+<g fill="none" stroke="#4b68b7" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="51" cy="62" r="15"/><circle cx="119" cy="39" r="13"/><circle cx="119" cy="85" r="13"/>
+<path d="M66 57L106 43M66 67L106 81M119 52V72"/>
+<circle cx="51" cy="62" r="5" fill="#af4936" stroke="none"/>
+</g>
+<g font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" fill="#172b78">
+<text x="176" y="54" font-size="22" font-weight="700">Agents &amp; memory</text>
+<text x="176" y="79" font-size="10" font-weight="700" letter-spacing=".55" fill="#3c5093">GO · LANGGRAPH · HNSW</text>
+</g></svg>

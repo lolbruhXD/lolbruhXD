@@ -79,15 +79,22 @@ These are additional projects from my engineering work; public source links are 
 
 </details>
 
-## Tools I work with
+## The toolkit behind the work
 
-| Area | Toolkit |
-| :--- | :--- |
-| **Models & math** | Python · PyTorch · NumPy · CUDA |
-| **Agents & retrieval** | LangChain · LangGraph · HNSW · streaming STT/TTS |
-| **Systems & APIs** | Go · TypeScript / JavaScript · Node.js · FastAPI · SQL |
-| **Vision & hardware** | OpenCV · MediaPipe · C / C++ · ESP32 |
-| **Shipping** | Docker · AWS · Git · CI/CD |
+Four connected parts of my practice. Each card opens a project or the work it supports.
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top"><a href="https://github.com/lolbruhXD/Creating-AutoGrad-from-scratch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-models-dark.svg"><img src="assets/stack-models-light.svg" width="100%" alt="Model craft: Python, PyTorch, NumPy, and CUDA. Open Autograd from scratch."></picture></a><br>From gradients and tensors to models I can explain. <a href="https://github.com/lolbruhXD/Creating-AutoGrad-from-scratch">Explore Autograd ↗</a></td>
+    <td width="50%" valign="top"><a href="#what-im-building"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-agents-dark.svg"><img src="assets/stack-agents-light.svg" width="100%" alt="Agents and memory: Go, LangGraph, and HNSW. Read about current work."></picture></a><br>Memory, retrieval, evaluation, and streaming voice. <a href="#what-im-building">See current work ↗</a></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><a href="https://github.com/lolbruhXD/holo-vex"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-vision-dark.svg"><img src="assets/stack-vision-light.svg" width="100%" alt="Real-time vision: OpenCV, MediaPipe, and ESP32. Open Holo-Vex."></picture></a><br>Hands, faces, pose, and sensor signals in motion. <a href="https://github.com/lolbruhXD/holo-vex">Explore Holo-Vex ↗</a></td>
+    <td width="50%" valign="top"><a href="https://github.com/lolbruhXD/OpenOrbit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-systems-dark.svg"><img src="assets/stack-systems-light.svg" width="100%" alt="Systems that ship: TypeScript, FastAPI, Docker, and AWS. Open OpenOrbit."></picture></a><br>APIs, product surfaces, deployment, and the glue between them. <a href="https://github.com/lolbruhXD/OpenOrbit">Explore OpenOrbit ↗</a></td>
+  </tr>
+</table>
+
+<sub>Also in the toolbox: JavaScript, Node.js, SQL, LangChain, streaming STT/TTS, C/C++, Git, and CI/CD.</sub>
 
 ## Building in the open
 
@@ -101,6 +108,17 @@ These are additional projects from my engineering work; public source links are 
 </a>
 
 <sub>Click the chart for GitHub's interactive contribution history. This image updates weekly and reflects GitHub contributions, not all of my engineering work.</sub>
+
+<a href="https://github.com/lolbruhXD?tab=overview" aria-label="Open Abisanka's GitHub contributions to inspect the monthly activity behind this chart">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/momentum-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/momentum-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/momentum-dark.svg">
+    <img src="assets/momentum-light.svg" width="100%" alt="Monthly GitHub contribution bars with active days, longest run, and peak month. Open GitHub to inspect individual days.">
+  </picture>
+</a>
+
+<sub>The second view shows active days and the longest run across the returned year, plus monthly bars for the latest 12 calendar months. The current month is still in progress; everything updates weekly.</sub>
 
 ## Let's build something worth understanding.
 

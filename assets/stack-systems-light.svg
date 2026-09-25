@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" role="img" aria-labelledby="title desc">
+<title id="title">Systems that ship</title><desc id="desc">Connected API and deployment layers</desc>
+<rect width="400" height="120" rx="14" fill="#f9fbff"/>
+<path d="M0 117H400" stroke="#af4936" stroke-width="3"/>
+<g fill="none" stroke="#4b68b7" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+<rect x="31" y="32" width="38" height="60" rx="5"/><rect x="112" y="32" width="38" height="60" rx="5"/>
+<path d="M45 50L52 58L45 66M82 62H100M95 56L101 62L95 68M125 49H138M125 60H138M125 71H134"/>
+<circle cx="88" cy="62" r="4" fill="#af4936" stroke="none"/>
+</g>
+<g font-family="Trebuchet MS, Segoe UI, Arial, sans-serif" fill="#172b78">
+<text x="176" y="54" font-size="22" font-weight="700">Systems that ship</text>
+<text x="176" y="79" font-size="10" font-weight="700" letter-spacing=".55" fill="#3c5093">TYPESCRIPT · FASTAPI · DOCKER · AWS</text>
+</g></svg>
